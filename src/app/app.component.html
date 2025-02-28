@@ -1,0 +1,17 @@
+<button
+  mat-icon-button
+  [matMenuTriggerFor]="animals"
+  aria-label="Example icon-button with a menu"
+>
+  <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #animals="matMenu">
+  <button  mat-menu-item (click)="goTo('star-hopper')"  >Star Hopper</button>
+  <button  mat-menu-item (click)="goTo('falcon-9')"  >Falcon 9</button>
+  <button  mat-menu-item [routerLink]="'/coming-soon'"    >
+    Super Heavy and Starship
+  </button>
+</mat-menu>
+ 
+
+<router-outlet />
