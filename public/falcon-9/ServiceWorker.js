@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-UnityFalcon9Landing-0.1.0";
 const contentToCache = [
     "Build/FalconWeb.loader.js",
-    "Build/FalconWeb.framework.js.gz",
-    "Build/FalconWeb.data.gz",
-    "Build/FalconWeb.wasm.gz",
+    "Build/FalconWeb.framework.js",
+    "Build/FalconWeb.data",
+    "Build/FalconWeb.wasm",
     "TemplateData/style.css"
 
 ];
