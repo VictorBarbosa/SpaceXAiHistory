@@ -2,6 +2,8 @@
 
 # Compiled output
 .vscode
+/.vscode
+./.vscode
 /tmp
 /out-tsc
 /bazel-out
@@ -40,3 +42,5 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+.vscode/extensions.json
