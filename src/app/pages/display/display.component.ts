@@ -12,7 +12,6 @@ export class DisplayComponent {
   iframeUrl!: SafeResourceUrl;
   constructor(private router: ActivatedRoute, private sanitizer: DomSanitizer) {
     this.router.queryParams.subscribe((x) => {
-      debugger
       this.iframeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
         x['type'] + '/index.html'
       );
