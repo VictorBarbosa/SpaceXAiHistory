@@ -12,9 +12,22 @@ export class DisplayComponent {
   iframeUrl!: SafeResourceUrl;
   constructor(private router: ActivatedRoute, private sanitizer: DomSanitizer) {
     this.router.queryParams.subscribe((x) => {
-      this.iframeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-        x['type'] + '/index.html'
-      );
+      this.goTo(x['type']);
     });
+  }
+
+  goTo(type: string) {
+    switch (type) {
+      case 'star-hopper':
+        this.iframeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+          'https://victorbarbosa.github.io/star-hopper-web/'
+        );
+        break;
+      case 'falcon-9':
+        this.iframeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+          'https://victorbarbosa.github.io/falcon-9-web/'
+        );
+        break;
+    }
   }
 }
