@@ -8,7 +8,7 @@
 <mat-menu #animals="matMenu">
   <button  mat-menu-item (click)="goTo('star-hopper')"  >Star Hopper</button>
   <button  mat-menu-item (click)="goTo('falcon-9')"  >Falcon 9</button>
-  <button  mat-menu-item [routerLink]="'/coming-soon'"    >
+  <button  mat-menu-item (click)="goTo('super-heavy')"   >
     Super Heavy and Starship
   </button>
 </mat-menu>

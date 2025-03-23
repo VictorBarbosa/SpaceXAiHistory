@@ -25,7 +25,12 @@ export class DisplayComponent {
         break;
       case 'falcon-9':
         this.iframeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-          'https://victorbarbosa.github.io/falcon-9-web/'
+          'https://html-classic.itch.zone/html/13161782/index.html'
+        );
+        break;
+      case 'super-heavy':
+        this.iframeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+          'https://html-classic.itch.zone/html/13161782/index.html'
         );
         break;
     }
