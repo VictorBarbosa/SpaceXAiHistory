@@ -30,7 +30,7 @@ export class DisplayComponent {
         break;
       case 'super-heavy':
         this.iframeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-          'https://html-classic.itch.zone/html/13161782/index.html'
+          'https://html-classic.itch.zone/html/13161742/index.html'
         );
         break;
     }
